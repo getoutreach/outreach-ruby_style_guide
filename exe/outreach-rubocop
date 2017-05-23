@@ -1,3 +1,1 @@
-#!/usr/bin/env bash
-
-bundle exec rubocop "$@"
+%x(bundle exec rubocop #{ARGV.join(' ')})
