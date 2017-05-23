@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+
+configurations = YAML.load_file('.rubocop.yml')
+
+config = configurations.sort { |p1, p2| p1.first <=> p2.first }.to_h
+
+File.open('.rubocop.yml', 'w') do |f|
+  f.write YAML.dump(config)
+end

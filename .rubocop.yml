@@ -1,0 +1,46 @@
+---
+AllCops:
+  # Disabling all cops by default in order to make an _explicit_ guide of what
+  # we care about
+  DisabledByDefault: true
+  TargetRubyVersion: 2.3
+Lint/Debugger:
+  Enabled: true
+Lint/EndAlignment:
+  Enabled: true
+Metrics/LineLength:
+  Enabled: true
+  Max: 120
+Style/Alias:
+  Enabled: true
+Style/ElseAlignment:
+  Enabled: true
+Style/EmptyLineBetweenDefs:
+  Enabled: true
+  AllowAdjacentOneLineDefs: true
+Style/EmptyLines:
+  Enabled: true
+Style/EmptyLinesAroundAccessModifier:
+  Enabled: true
+Style/EmptyLinesAroundBlockBody:
+  Enabled: true
+Style/EmptyLinesAroundClassBody:
+  Enabled: true
+Style/EmptyLinesAroundMethodBody:
+  Enabled: true
+Style/EmptyLinesAroundModuleBody:
+  Enabled: true
+Style/EndOfLine:
+  Enabled: true
+Style/ExtraSpacing:
+  Enabled: true
+Style/IndentationWidth:
+  Enabled: true
+Style/PreferredHashMethods:
+  Enabled: true
+Style/Tab:
+  Enabled: true
+Style/TrailingBlankLines:
+  Enabled: true
+Style/TrailingWhitespace:
+  Enabled: true
