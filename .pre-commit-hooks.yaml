@@ -1,6 +1,6 @@
 -   id: outreach-ruby_style_guide
     name: outreach-ruby_style_guide
-    entry: rubocop
+    entry: outreach-rubocop
     language: ruby
     files: \.(rb|rake)$
     args: []
