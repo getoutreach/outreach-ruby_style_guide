@@ -6,7 +6,7 @@ require 'yaml'
 # Sort the cops in case it hasn't already been done
 `./bin/sort_cops`
 
-# This is a nonsense list.
+# Unhappy aboaut this list being here.
 # Rubocop documents these cops as Layout cops, but they are in fact Style cops.
 # This is here so we can link to the documentation correctly.
 LAYOUT_COPS = [
