@@ -100,6 +100,8 @@ end
 def build_link(full_cop)
   type, cop = full_cop.split('/')
 
+  return 'http://rubocop.readthedocs.io/en/latest/cops/' if type == 'AllCops'
+
   "http://rubocop.readthedocs.io/en/latest/#{cop_type_link(type, cop)}/##{full_cop.downcase.gsub('/', '')}"
 end
 
