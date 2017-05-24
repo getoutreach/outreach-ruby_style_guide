@@ -1,7 +1,5 @@
 ---
 AllCops:
-  # Disabling all cops by default in order to make an _explicit_ guide of what
-  # we care about
   DisabledByDefault: true
   TargetRubyVersion: 2.3
 Lint/Debugger:

@@ -35,46 +35,10 @@ If installed via `bundler`, be sure to use `bundle exec rubocop`. Otherwise, rub
 
 ## Style guide details
 
-* [`AllCops`](http://rubocop.readthedocs.io/en/latest/cops_style/#allcops)
+<% @full_built_cops.each do |cop| -%>
+* [`<%= cop.full_cop_name %>`](<%= cop.link %>)
 
-* [`Lint/Debugger`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintdebugger)
-
-* [`Lint/EndAlignment`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintendalignment)
-
-* [`Metrics/LineLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength)
-
-* [`Style/Alias`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylealias)
-
-* [`Style/ElseAlignment`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleelsealignment)
-
-* [`Style/EmptyLineBetweenDefs`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinebetweendefs)
-
-* [`Style/EmptyLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylines)
-
-* [`Style/EmptyLinesAroundAccessModifier`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundaccessmodifier)
-
-* [`Style/EmptyLinesAroundBlockBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundblockbody)
-
-* [`Style/EmptyLinesAroundClassBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundclassbody)
-
-* [`Style/EmptyLinesAroundMethodBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundmethodbody)
-
-* [`Style/EmptyLinesAroundModuleBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundmodulebody)
-
-* [`Style/EndOfLine`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleendofline)
-
-* [`Style/ExtraSpacing`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleextraspacing)
-
-* [`Style/IndentationWidth`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleindentationwidth)
-
-* [`Style/PreferredHashMethods`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylepreferredhashmethods)
-
-* [`Style/Tab`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styletab)
-
-* [`Style/TrailingBlankLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styletrailingblanklines)
-
-* [`Style/TrailingWhitespace`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styletrailingwhitespace)
-
+<% end -%>
 
 ## Development
 
