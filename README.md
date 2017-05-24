@@ -35,15 +35,19 @@ If installed via `bundler`, be sure to use `bundle exec rubocop`. Otherwise, rub
 
 ## Enabled Cops
 
-Below are all the cops we have decided to enable unilaterally. Each item is a link to the documentation at the _latest_ version of rubocop.
+Below are all the cops we have decided to enable unilaterally with any additional configurations that differ from the default. Each item is a link to the documentation at the _latest_ version of rubocop.
 
 * [`AllCops`](http://rubocop.readthedocs.io/en/latest/cops/)
+  * DisabledByDefault: true
+  * TargetRubyVersion: 2.3
 * [`Lint/Debugger`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintdebugger)
 * [`Lint/EndAlignment`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintendalignment)
 * [`Metrics/LineLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength)
+  * Max: 120
 * [`Style/Alias`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylealias)
 * [`Style/ElseAlignment`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleelsealignment)
 * [`Style/EmptyLineBetweenDefs`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinebetweendefs)
+  * AllowAdjacentOneLineDefs: true
 * [`Style/EmptyLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylines)
 * [`Style/EmptyLinesAroundAccessModifier`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundaccessmodifier)
 * [`Style/EmptyLinesAroundBlockBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundblockbody)
