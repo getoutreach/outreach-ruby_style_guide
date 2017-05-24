@@ -35,7 +35,7 @@ If installed via `bundler`, be sure to use `bundle exec rubocop`. Otherwise, rub
 
 ## Enabled Cops
 
-Below are all the cops we have decided to enable unilaterally with any additional configurations that differ from the default. Each item is a link to the documentation at the _latest_ version of rubocop.
+Below are all the cops we have decided to enable unilaterally. Each item is a link to the documentation at the _latest_ version of rubocop.
 
 * [`AllCops`](http://rubocop.readthedocs.io/en/latest/cops/)
   * DisabledByDefault: true
@@ -45,22 +45,22 @@ Below are all the cops we have decided to enable unilaterally with any additiona
 * [`Metrics/LineLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength)
   * Max: 120
 * [`Style/Alias`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylealias)
-* [`Style/ElseAlignment`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleelsealignment)
-* [`Style/EmptyLineBetweenDefs`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinebetweendefs)
+* [`Style/ElseAlignment`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutelsealignment)
+* [`Style/EmptyLineBetweenDefs`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinebetweendefs)
   * AllowAdjacentOneLineDefs: true
-* [`Style/EmptyLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylines)
-* [`Style/EmptyLinesAroundAccessModifier`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundaccessmodifier)
-* [`Style/EmptyLinesAroundBlockBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundblockbody)
-* [`Style/EmptyLinesAroundClassBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundclassbody)
-* [`Style/EmptyLinesAroundMethodBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundmethodbody)
-* [`Style/EmptyLinesAroundModuleBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleemptylinesaroundmodulebody)
-* [`Style/EndOfLine`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleendofline)
-* [`Style/ExtraSpacing`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleextraspacing)
-* [`Style/IndentationWidth`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styleindentationwidth)
+* [`Style/EmptyLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylines)
+* [`Style/EmptyLinesAroundAccessModifier`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundaccessmodifier)
+* [`Style/EmptyLinesAroundBlockBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundblockbody)
+* [`Style/EmptyLinesAroundClassBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundclassbody)
+* [`Style/EmptyLinesAroundMethodBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundmethodbody)
+* [`Style/EmptyLinesAroundModuleBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundmodulebody)
+* [`Style/EndOfLine`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendofline)
+* [`Style/ExtraSpacing`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutextraspacing)
+* [`Style/IndentationWidth`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutindentationwidth)
 * [`Style/PreferredHashMethods`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylepreferredhashmethods)
-* [`Style/Tab`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styletab)
-* [`Style/TrailingBlankLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styletrailingblanklines)
-* [`Style/TrailingWhitespace`](http://rubocop.readthedocs.io/en/latest/cops_layout/#styletrailingwhitespace)
+* [`Style/Tab`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttab)
+* [`Style/TrailingBlankLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttrailingblanklines)
+* [`Style/TrailingWhitespace`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttrailingwhitespace)
 
 ## Development
 

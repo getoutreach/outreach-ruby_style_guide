@@ -91,10 +91,18 @@ COP_TYPES = {
   'Bundler' => 'cops_bundler'
 }.freeze
 
+def layout_cop?(cop)
+  LAYOUT_COPS.include?(cop)
+end
+
 def cop_type_link(type, cop)
-  COP_TYPES.fetch(type) {
-    LAYOUT_COPS.include?(cop) ? 'cops_layout' : 'cops_style'
-  }
+  COP_TYPES.fetch(type) { layout_cop?(cop) ? 'cops_layout' : 'cops_style' }
+end
+
+def cop_anchor(type, cop)
+  return "#{type}#{cop}".downcase unless type == 'Style'
+
+  "#{layout_cop?(cop) ? 'layout' : 'style'}#{cop}".downcase
 end
 
 def build_link(full_cop)
@@ -102,7 +110,7 @@ def build_link(full_cop)
 
   return 'http://rubocop.readthedocs.io/en/latest/cops/' if type == 'AllCops'
 
-  "http://rubocop.readthedocs.io/en/latest/#{cop_type_link(type, cop)}/##{full_cop.downcase.gsub('/', '')}"
+  "http://rubocop.readthedocs.io/en/latest/#{cop_type_link(type, cop)}/##{cop_anchor(type, cop)}"
 end
 
 our_cops = YAML.load_file('.rubocop.yml')
