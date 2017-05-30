@@ -1,1 +1,1 @@
-exec "rubocop #{ARGV.join(' ')}"
+exec 'rubocop',  ARGV.join(' ')

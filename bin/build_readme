@@ -1,0 +1,130 @@
+#!/usr/bin/env ruby
+
+require 'erb'
+require 'yaml'
+
+# Sort the cops in case it hasn't already been done
+`./bin/sort_cops`
+
+# Unhappy aboaut this list being here.
+# Rubocop documents these cops as Layout cops, but they are in fact Style cops.
+# This is here so we can link to the documentation correctly.
+LAYOUT_COPS = [
+  'AccessModifierIndentation',
+  'AlignArray',
+  'AlignHash',
+  'AlignParameters',
+  'BlockEndNewline',
+  'CaseIndentation',
+  'ClosingParenthesisIndentation',
+  'CommentIndentation',
+  'DotPosition',
+  'ElseAlignment',
+  'EmptyLineAfterMagicComment',
+  'EmptyLineBetweenDefs',
+  'EmptyLines',
+  'EmptyLinesAroundAccessModifier',
+  'EmptyLinesAroundBeginBody',
+  'EmptyLinesAroundBlockBody',
+  'EmptyLinesAroundClassBody',
+  'EmptyLinesAroundExceptionHandlingKeywords',
+  'EmptyLinesAroundMethodBody',
+  'EmptyLinesAroundModuleBody',
+  'EndOfLine',
+  'ExtraSpacing',
+  'FirstArrayElementLineBreak',
+  'FirstHashElementLineBreak',
+  'FirstMethodArgumentLineBreak',
+  'FirstMethodParameterLineBreak',
+  'FirstParameterIndentation',
+  'IndentArray',
+  'IndentAssignment',
+  'IndentHash',
+  'IndentHeredoc',
+  'IndentationConsistency',
+  'IndentationWidth',
+  'InitialIndentation',
+  'LeadingCommentSpace',
+  'MultilineArrayBraceLayout',
+  'MultilineAssignmentLayout',
+  'MultilineBlockLayout',
+  'MultilineHashBraceLayout',
+  'MultilineMethodCallBraceLayout',
+  'MultilineMethodCallIndentation',
+  'MultilineMethodDefinitionBraceLayout',
+  'MultilineOperationIndentation',
+  'RescueEnsureAlignment',
+  'SpaceAfterColon',
+  'SpaceAfterComma',
+  'SpaceAfterMethodName',
+  'SpaceAfterNot',
+  'SpaceAfterSemicolon',
+  'SpaceAroundBlockParameters',
+  'SpaceAroundEqualsInParameterDefault',
+  'SpaceAroundKeyword',
+  'SpaceAroundOperators',
+  'SpaceBeforeBlockBraces',
+  'SpaceBeforeComma',
+  'SpaceBeforeComment',
+  'SpaceBeforeFirstArg',
+  'SpaceBeforeSemicolon',
+  'SpaceInLambdaLiteral',
+  'SpaceInsideArrayPercentLiteral',
+  'SpaceInsideBlockBraces',
+  'SpaceInsideBrackets',
+  'SpaceInsideHashLiteralBraces',
+  'SpaceInsideParens',
+  'SpaceInsidePercentLiteralDelimiters',
+  'SpaceInsideRangeLiteral',
+  'SpaceInsideStringInterpolation',
+  'Tab',
+  'TrailingBlankLines',
+  'TrailingWhitespace'
+].freeze
+
+COP_TYPES = {
+  'Lint' => 'cops_lint',
+  'Performance' => 'cops_performance',
+  'Metrics' => 'cops_metrics',
+  'Rails' => 'cops_rails',
+  'Security' => 'cops_security',
+  'Bundler' => 'cops_bundler'
+}.freeze
+
+def layout_cop?(cop)
+  LAYOUT_COPS.include?(cop)
+end
+
+def cop_type_link(type, cop)
+  COP_TYPES.fetch(type) { layout_cop?(cop) ? 'cops_layout' : 'cops_style' }
+end
+
+def cop_anchor(type, cop)
+  return "#{type}#{cop}".downcase unless type == 'Style'
+
+  "#{layout_cop?(cop) ? 'layout' : 'style'}#{cop}".downcase
+end
+
+def build_link(full_cop)
+  type, cop = full_cop.split('/')
+
+  return 'http://rubocop.readthedocs.io/en/latest/cops/' if type == 'AllCops'
+
+  "http://rubocop.readthedocs.io/en/latest/#{cop_type_link(type, cop)}/##{cop_anchor(type, cop)}"
+end
+
+our_cops = YAML.load_file('.rubocop.yml')
+
+RubcopCop = Struct.new(:full_cop_name, :configuration, :link)
+
+@full_built_cops = our_cops.map do |cop, config|
+  RubcopCop.new(cop, config, build_link(cop))
+end
+
+b = binding
+
+template = File.open('readme_template.md.erb') { |f| f.read }
+
+File.open('README.md', 'w') do |f|
+  f.write(ERB.new(template, 0, '<>-').result b)
+end
