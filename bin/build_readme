@@ -54,6 +54,7 @@ LAYOUT_COPS = [
   'MultilineMethodDefinitionBraceLayout',
   'MultilineOperationIndentation',
   'RescueEnsureAlignment',
+  'ShadowingOuterLocalVariable',
   'SpaceAfterColon',
   'SpaceAfterComma',
   'SpaceAfterMethodName',
