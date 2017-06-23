@@ -48,6 +48,13 @@ Below are all the cops we have decided to enable unilaterally. Each item is a li
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. At the moment, there is basically no ruby code within the libraries, just a few binary scripts to automate and fill out some things.
 
+### Adding a Cop
+
+Adding a cop requires two steps:
+
+1. Add the cop anywhere in the .rubocop.yml file.
+2. Run `bin/build_readme`. This will sort the Cops then generate the README from this template.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/jpanderson-outreach/outreach-ruby_style_guide. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

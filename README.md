@@ -42,6 +42,7 @@ Below are all the cops we have decided to enable unilaterally. Each item is a li
   * TargetRubyVersion: 2.3
 * [`Lint/Debugger`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintdebugger)
 * [`Lint/EndAlignment`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintendalignment)
+* [`Lint/ShadowingOuterLocalVariable`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintshadowingouterlocalvariable)
 * [`Metrics/LineLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength)
   * Max: 120
 * [`Style/Alias`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylealias)
@@ -65,6 +66,13 @@ Below are all the cops we have decided to enable unilaterally. Each item is a li
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. At the moment, there is basically no ruby code within the libraries, just a few binary scripts to automate and fill out some things.
+
+### Adding a Cop
+
+Adding a cop requires two steps:
+
+1. Add the cop anywhere in the .rubocop.yml file.
+2. Run `bin/build_readme`. This will sort the Cops then generate the README from this template.
 
 ## Contributing
 
