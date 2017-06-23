@@ -6,6 +6,8 @@ Lint/Debugger:
   Enabled: true
 Lint/EndAlignment:
   Enabled: true
+Lint/ShadowingOuterLocalVariable:
+  Enabled: true
 Metrics/LineLength:
   Enabled: true
   Max: 120
