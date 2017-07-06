@@ -2,7 +2,21 @@
 AllCops:
   DisabledByDefault: true
   TargetRubyVersion: 2.3
+Bundler/DuplicatedGem:
+  Enabled: true
+Bundler/OrderedGems:
+  Enabled: true
+Layout/AccessModifierIndentation:
+  Enabled: true
+Layout/AlignParameters:
+  Enabled: true
+Layout/BlockEndNewline:
+  Enabled: true
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
 Layout/ElseAlignment:
+  Enabled: true
+Layout/EmptyLineAfterMagicComment:
   Enabled: true
 Layout/EmptyLineBetweenDefs:
   Enabled: true
@@ -11,9 +25,13 @@ Layout/EmptyLines:
   Enabled: true
 Layout/EmptyLinesAroundAccessModifier:
   Enabled: true
+Layout/EmptyLinesAroundBeginBody:
+  Enabled: true
 Layout/EmptyLinesAroundBlockBody:
   Enabled: true
 Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
   Enabled: true
 Layout/EmptyLinesAroundMethodBody:
   Enabled: true
@@ -23,7 +41,76 @@ Layout/EndOfLine:
   Enabled: true
 Layout/ExtraSpacing:
   Enabled: true
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+Layout/FirstParameterIndentation:
+  Enabled: true
+Layout/IndentAssignment:
+  Enabled: true
+Layout/IndentationConsistency:
+  Enabled: true
 Layout/IndentationWidth:
+  Enabled: true
+  Width: 2
+Layout/InitialIndentation:
+  Enabled: true
+Layout/MultilineArrayBraceLayout:
+  Enabled: true
+Layout/MultilineBlockLayout:
+  Enabled: true
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+Layout/MultilineMethodDefinitionBraceLayout:
+  Enabled: true
+Layout/MultilineOperationIndentation:
+  Enabled: true
+Layout/RescueEnsureAlignment:
+  Enabled: true
+Layout/SpaceAfterColon:
+  Enabled: true
+Layout/SpaceAfterComma:
+  Enabled: true
+Layout/SpaceAfterMethodName:
+  Enabled: true
+Layout/SpaceAfterNot:
+  Enabled: true
+Layout/SpaceAfterSemicolon:
+  Enabled: true
+Layout/SpaceAroundBlockParameters:
+  Enabled: true
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+Layout/SpaceAroundKeyword:
+  Enabled: true
+Layout/SpaceAroundOperators:
+  Enabled: true
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+Layout/SpaceBeforeComma:
+  Enabled: true
+Layout/SpaceBeforeComment:
+  Enabled: true
+Layout/SpaceBeforeFirstArg:
+  Enabled: true
+Layout/SpaceBeforeSemicolon:
+  Enabled: true
+Layout/SpaceInLambdaLiteral:
+  Enabled: true
+Layout/SpaceInsideArrayPercentLiteral:
+  Enabled: true
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+Layout/SpaceInsideParens:
+  Enabled: true
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Enabled: true
+Layout/SpaceInsideRangeLiteral:
+  Enabled: true
+Layout/SpaceInsideStringInterpolation:
   Enabled: true
 Layout/Tab:
   Enabled: true
