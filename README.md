@@ -40,28 +40,28 @@ Below are all the cops we have decided to enable unilaterally. Each item is a li
 * [`AllCops`](http://rubocop.readthedocs.io/en/latest/cops/)
   * DisabledByDefault: true
   * TargetRubyVersion: 2.3
+* [`Layout/ElseAlignment`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutelsealignment)
+* [`Layout/EmptyLineBetweenDefs`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinebetweendefs)
+  * AllowAdjacentOneLineDefs: true
+* [`Layout/EmptyLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylines)
+* [`Layout/EmptyLinesAroundAccessModifier`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundaccessmodifier)
+* [`Layout/EmptyLinesAroundBlockBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundblockbody)
+* [`Layout/EmptyLinesAroundClassBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundclassbody)
+* [`Layout/EmptyLinesAroundMethodBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundmethodbody)
+* [`Layout/EmptyLinesAroundModuleBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundmodulebody)
+* [`Layout/EndOfLine`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendofline)
+* [`Layout/ExtraSpacing`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutextraspacing)
+* [`Layout/IndentationWidth`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutindentationwidth)
+* [`Layout/Tab`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttab)
+* [`Layout/TrailingBlankLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttrailingblanklines)
+* [`Layout/TrailingWhitespace`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttrailingwhitespace)
 * [`Lint/Debugger`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintdebugger)
 * [`Lint/EndAlignment`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintendalignment)
 * [`Lint/ShadowingOuterLocalVariable`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintshadowingouterlocalvariable)
 * [`Metrics/LineLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength)
   * Max: 120
 * [`Style/Alias`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylealias)
-* [`Style/ElseAlignment`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutelsealignment)
-* [`Style/EmptyLineBetweenDefs`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinebetweendefs)
-  * AllowAdjacentOneLineDefs: true
-* [`Style/EmptyLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylines)
-* [`Style/EmptyLinesAroundAccessModifier`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundaccessmodifier)
-* [`Style/EmptyLinesAroundBlockBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundblockbody)
-* [`Style/EmptyLinesAroundClassBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundclassbody)
-* [`Style/EmptyLinesAroundMethodBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundmethodbody)
-* [`Style/EmptyLinesAroundModuleBody`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutemptylinesaroundmodulebody)
-* [`Style/EndOfLine`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendofline)
-* [`Style/ExtraSpacing`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutextraspacing)
-* [`Style/IndentationWidth`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layoutindentationwidth)
 * [`Style/PreferredHashMethods`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylepreferredhashmethods)
-* [`Style/Tab`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttab)
-* [`Style/TrailingBlankLines`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttrailingblanklines)
-* [`Style/TrailingWhitespace`](http://rubocop.readthedocs.io/en/latest/cops_layout/#layouttrailingwhitespace)
 
 ## Development
 
