@@ -58,8 +58,11 @@ Below are all the cops we have decided to enable unilaterally. Each item is a li
 * [`Lint/Debugger`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintdebugger)
 * [`Lint/EndAlignment`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintendalignment)
 * [`Lint/ShadowingOuterLocalVariable`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintshadowingouterlocalvariable)
+* [`Metrics/BlockLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsblocklength)
+* [`Metrics/BlockNesting`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsblocknesting)
 * [`Metrics/LineLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength)
   * Max: 120
+* [`Metrics/ParameterLists`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricsparameterlists)
 * [`Style/Alias`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylealias)
 * [`Style/PreferredHashMethods`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylepreferredhashmethods)
 
