@@ -2,6 +2,35 @@
 AllCops:
   DisabledByDefault: true
   TargetRubyVersion: 2.3
+Layout/ElseAlignment:
+  Enabled: true
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+  AllowAdjacentOneLineDefs: true
+Layout/EmptyLines:
+  Enabled: true
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+Layout/EndOfLine:
+  Enabled: true
+Layout/ExtraSpacing:
+  Enabled: true
+Layout/IndentationWidth:
+  Enabled: true
+Layout/Tab:
+  Enabled: true
+Layout/TrailingBlankLines:
+  Enabled: true
+Layout/TrailingWhitespace:
+  Enabled: true
 Lint/Debugger:
   Enabled: true
 Lint/EndAlignment:
@@ -13,34 +42,5 @@ Metrics/LineLength:
   Max: 120
 Style/Alias:
   Enabled: true
-Style/ElseAlignment:
-  Enabled: true
-Style/EmptyLineBetweenDefs:
-  Enabled: true
-  AllowAdjacentOneLineDefs: true
-Style/EmptyLines:
-  Enabled: true
-Style/EmptyLinesAroundAccessModifier:
-  Enabled: true
-Style/EmptyLinesAroundBlockBody:
-  Enabled: true
-Style/EmptyLinesAroundClassBody:
-  Enabled: true
-Style/EmptyLinesAroundMethodBody:
-  Enabled: true
-Style/EmptyLinesAroundModuleBody:
-  Enabled: true
-Style/EndOfLine:
-  Enabled: true
-Style/ExtraSpacing:
-  Enabled: true
-Style/IndentationWidth:
-  Enabled: true
 Style/PreferredHashMethods:
-  Enabled: true
-Style/Tab:
-  Enabled: true
-Style/TrailingBlankLines:
-  Enabled: true
-Style/TrailingWhitespace:
   Enabled: true
