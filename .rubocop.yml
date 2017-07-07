@@ -42,5 +42,183 @@ Metrics/LineLength:
   Max: 120
 Style/Alias:
   Enabled: true
+Style/AndOr:
+  Enabled: true
+Style/ArrayJoin:
+  Enabled: true
+Style/AsciiIdentifiers:
+  Enabled: true
+Style/Attr:
+  Enabled: true
+Style/AutoResourceCleanup:
+  Enabled: true
+Style/BarePercentLiterals:
+  Enabled: true
+  EnforcedStyle: percent_q
+Style/BeginBlock:
+  Enabled: true
+Style/BlockComments:
+  Enabled: true
+Style/CaseEquality:
+  Enabled: true
+Style/CharacterLiteral:
+  Enabled: true
+Style/ClassAndModuleCamelCase:
+  Enabled: true
+Style/ClassAndModuleChildren:
+  Enabled: true
+Style/ClassCheck:
+  Enabled: true
+Style/ClassMethods:
+  Enabled: true
+Style/CollectionMethods:
+  Enabled: true
+Style/ColonMethodCall:
+  Enabled: true
+Style/CommandLiteral:
+  Enabled: true
+Style/CommentAnnotation:
+  Enabled: true
+Style/ConditionalAssignment:
+  Enabled: true
+Style/ConstantName:
+  Enabled: true
+Style/DefWithParentheses:
+  Enabled: true
+Style/Dir:
+  Enabled: true
+Style/EachForSimpleLoop:
+  Enabled: true
+Style/EachWithObject:
+  Enabled: true
+Style/EmptyCaseCondition:
+  Enabled: true
+Style/EmptyElse:
+  Enabled: true
+Style/EmptyMethod:
+  Enabled: true
+Style/EndBlock:
+  Enabled: true
+Style/EvenOdd:
+  Enabled: true
+Style/FileName:
+  Enabled: true
+Style/FlipFlop:
+  Enabled: true
+Style/For:
+  Enabled: true
+Style/FormatString:
+  Enabled: true
+Style/FormatStringToken:
+  Enabled: true
+Style/GlobalVars:
+  Enabled: true
+Style/HashSyntax:
+  Enabled: true
+Style/HeredocDelimiterCase:
+  Enabled: true
+Style/IdenticalConditionalBranches:
+  Enabled: true
+Style/IfInsideElse:
+  Enabled: true
+Style/IfUnlessModifierOfIfUnless:
+  Enabled: true
+Style/IfWithSemicolon:
+  Enabled: true
+Style/InverseMethods:
+  Enabled: true
+Style/LineEndConcatenation:
+  Enabled: true
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: true
+Style/MethodDefParentheses:
+  Enabled: true
+Style/MethodName:
+  Enabled: true
+Style/MixinGrouping:
+  Enabled: true
+Style/ModuleFunction:
+  Enabled: true
+Style/MultilineIfModifier:
+  Enabled: true
+Style/MultilineIfThen:
+  Enabled: true
+Style/MultilineMemoization:
+  Enabled: true
+Style/MultilineTernaryOperator:
+  Enabled: true
+Style/MutableConstant:
+  Enabled: true
+Style/NegatedIf:
+  Enabled: true
+Style/NestedModifier:
+  Enabled: true
+Style/NestedParenthesizedCalls:
+  Enabled: true
+Style/NestedTernaryOperator:
+  Enabled: true
+Style/Next:
+  Enabled: true
+Style/NilComparison:
+  Enabled: true
+Style/NonNilCheck:
+  Enabled: true
+Style/Not:
+  Enabled: true
+Style/OptionalArguments:
+  Enabled: true
+Style/PerlBackrefs:
+  Enabled: true
+Style/PredicateName:
+  Enabled: true
 Style/PreferredHashMethods:
+  Enabled: true
+Style/RaiseArgs:
+  Enabled: true
+Style/RedundantBegin:
+  Enabled: true
+Style/RedundantException:
+  Enabled: true
+Style/RedundantFreeze:
+  Enabled: true
+Style/RedundantParentheses:
+  Enabled: true
+Style/RedundantReturn:
+  Enabled: true
+Style/RedundantSelf:
+  Enabled: true
+Style/SelfAssignment:
+  Enabled: true
+Style/StabbyLambdaParentheses:
+  Enabled: true
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+Style/SymbolArray:
+  Enabled: true
+Style/SymbolLiteral:
+  Enabled: true
+Style/SymbolProc:
+  Enabled: true
+Style/TernaryParentheses:
+  Enabled: true
+  EnforcedStyle: require_parentheses_when_complex
+Style/TrivialAccessors:
+  Enabled: true
+Style/UnlessElse:
+  Enabled: true
+Style/UnneededCapitalW:
+  Enabled: true
+Style/UnneededInterpolation:
+  Enabled: true
+Style/VariableInterpolation:
+  Enabled: true
+Style/VariableName:
+  Enabled: true
+Style/WhenThen:
+  Enabled: true
+Style/WordArray:
+  Enabled: true
+Style/YodaCondition:
+  Enabled: true
+Style/ZeroLengthPredicate:
   Enabled: true
