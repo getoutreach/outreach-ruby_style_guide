@@ -60,6 +60,10 @@ Below are all the cops we have decided to enable unilaterally. Each item is a li
 * [`Lint/ShadowingOuterLocalVariable`](http://rubocop.readthedocs.io/en/latest/cops_lint/#lintshadowingouterlocalvariable)
 * [`Metrics/LineLength`](http://rubocop.readthedocs.io/en/latest/cops_metrics/#metricslinelength)
   * Max: 120
+* [`Security/Eval`](http://rubocop.readthedocs.io/en/latest/cops_security/#securityeval)
+* [`Security/JSONLoad`](http://rubocop.readthedocs.io/en/latest/cops_security/#securityjsonload)
+* [`Security/MarshalLoad`](http://rubocop.readthedocs.io/en/latest/cops_security/#securitymarshalload)
+* [`Security/YAMLLoad`](http://rubocop.readthedocs.io/en/latest/cops_security/#securityyamlload)
 * [`Style/Alias`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylealias)
 * [`Style/PreferredHashMethods`](http://rubocop.readthedocs.io/en/latest/cops_style/#stylepreferredhashmethods)
 

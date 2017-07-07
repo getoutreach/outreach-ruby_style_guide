@@ -40,6 +40,14 @@ Lint/ShadowingOuterLocalVariable:
 Metrics/LineLength:
   Enabled: true
   Max: 120
+Security/Eval:
+  Enabled: true
+Security/JSONLoad:
+  Enabled: true
+Security/MarshalLoad:
+  Enabled: true
+Security/YAMLLoad:
+  Enabled: true
 Style/Alias:
   Enabled: true
 Style/PreferredHashMethods:
