@@ -37,9 +37,15 @@ Lint/EndAlignment:
   Enabled: true
 Lint/ShadowingOuterLocalVariable:
   Enabled: true
+Metrics/BlockLength:
+  Enabled: true
+Metrics/BlockNesting:
+  Enabled: true
 Metrics/LineLength:
   Enabled: true
   Max: 120
+Metrics/ParameterLists:
+  Enabled: true
 Style/Alias:
   Enabled: true
 Style/PreferredHashMethods:
